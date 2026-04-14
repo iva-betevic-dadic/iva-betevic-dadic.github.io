@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Slika lijevo uz tekst</title>
+</head>
+<body>
+    <img src="flower.jpg" align="left" width="200" height="75" alt="Cvijet">
+    <h1>Primjer slike poravnate lijevo</h1>
+    Ovdje je slika postavljena lijevo pomoću atributa align.
+    Tekst se tada nastavlja desno od slike i prati njezin položaj na stranici.
+    U ovom primjeru objašnjava se kako element img može utjecati na raspored sadržaja.
+    Atributi width i height određuju širinu i visinu slike.
+    Atribut alt služi kao tekstualni opis slike ako se slika ne prikaže.
+    Na ovaj način može se jednostavno složiti osnovni raspored slike i teksta.
+</body>
+</html>
