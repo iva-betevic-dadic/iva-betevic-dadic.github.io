@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Razmaci oko slike</title>
+</head>
+<body>
+    <img src="horse.jpg" align="left" width="200" height="75" vspace="50" hspace="50" alt="Konj">
+    <h1>Primjer slike s razmacima</h1>
+    U ovom primjeru uz sliku se koriste atributi hspace i vspace.
+    Atribut hspace dodaje vodoravni razmak oko slike, a vspace okomiti razmak.
+    Zbog toga tekst nije priljubljen uz sliku nego oko nje ostaje slobodan prostor.
+    Ovo je jednostavan način za pregledniji raspored elemenata na stranici.
+    Slika je i dalje poravnata lijevo pa tekst teče s njezine desne strane.
+</body>
+</html>
