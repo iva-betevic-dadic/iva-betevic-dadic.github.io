@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DIV i IMG</title>
+    </head>
+    <body>
+        <a href="divimg1.html">div img 1</a><br>
+        <a href="divimg2.html">div img 2</a><br>
+        <a href="divimg3.html">div img 3</a><br>
+        <a href="divimg4.html">div img 4</a><br>
+        <a href="divimg5.html">div img 5</a><br>
+        <a href="divimg6.html">div img 6</a><br>
+        <a href="divimg7.html">div img 7</a><br>
+        <a href="divimg8.html">div img 8</a><br>
+        <a href="divimg9.html">div img 9</a><br>
+    </body>
+</html>
