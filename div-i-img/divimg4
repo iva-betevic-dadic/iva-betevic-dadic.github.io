@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Slike u samostalnom retku</title>
+</head>
+<body>
+    <p align="right">
+        <img src="horse.jpg" alt="Konj na livadi" width="500" height="250">
+    </p>
+    Ovdje je slika postavljena u zaseban redak i poravnata je desno pomoću atributa align unutar elementa p.<br>
+
+    <p align="left">
+        <img src="flower.jpg" alt="Bijeli cvjetovi" width="400" height="200">
+    </p>
+    Ovdje je slika ponovno u zasebnom retku, ali je ovaj put poravnata lijevo.<br>
+
+    <p align="center">
+        <img src="horse.jpg" alt="Konj na travi" width="350" height="199">
+    </p>
+    U trećem primjeru slika je centrirana, a atributi width i height određuju njezine dimenzije.<br>
+</body>
+</html>
