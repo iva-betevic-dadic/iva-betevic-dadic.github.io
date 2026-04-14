@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Poravnanje slike uz tekst</title>
+</head>
+<body>
+    <p align="left">
+    <h1>
+    Ovdje je slika poravnata uz vrh retka <img src="flower.jpg" align="top" alt="Cvijet" width="90" height="120"><br>
+    Ovdje je slika poravnata prema sredini retka <img src="flower.jpg" align="middle" alt="Cvijet" width="90" height="120"><br>
+    Ovdje je slika poravnata uz dno retka <img src="flower.jpg" align="bottom" alt="Cvijet" width="90" height="120"><br>
+    </h1>
+    </p>
+</body>
+</html>
