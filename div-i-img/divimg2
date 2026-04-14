@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DIV visibility</title>
+</head>
+<body>
+    Ovaj tekst je izvan DIV elementa.<br/>
+    Ovaj tekst je izvan DIV elementa.<br/>
+    Ovaj tekst je izvan DIV elementa.<br/>
+
+    <div style="position: relative; top: 10px; left: 100px; visibility: visible;">
+        Ovaj DIV je vidljiv jer koristi visibility: visible.<br/>
+        Tekst se normalno prikazuje na stranici.<br/>
+    </div>
+
+    <div style="position: absolute; top: 500px; right: 200px; visibility: hidden;">
+        Ovaj DIV je skriven jer koristi visibility: hidden.<br/>
+        Sadržaj postoji, ali se ne vidi na stranici.<br/>
+    </div>
+
+    Ovaj tekst je izvan DIV elementa.<br/>
+    Ovaj tekst je izvan DIV elementa.<br/>
+    Ovaj tekst je izvan DIV elementa.<br/>
+</body>
+</html>
