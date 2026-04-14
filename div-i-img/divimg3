@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DIV i z-index</title>
+</head>
+<body>
+    <div style="position: absolute; top: 130px; left: 100px; z-index: 20">
+        Ovaj tekst ima veći z-index pa se prikazuje iznad slike.<br/>
+    </div>
+
+    <div style="position: absolute; top: 130px; left: 100px; z-index: 1">
+        <img src="flower.jpg" alt="Cvijet" width="220" height="140">
+    </div>
+
+    <div style="position: absolute; top: 130px; right: 100px; z-index: 1">
+        <img src="horse.jpg" alt="Konj" width="220" height="140">
+    </div>
+</body>
+</html>
