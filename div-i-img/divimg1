@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DIV relative i absolute</title>
+</head>
+<body>
+    Ovaj tekst je izvan DIV elementa.<br/>
+    Ovaj tekst je izvan DIV elementa.<br/>
+    Ovaj tekst je izvan DIV elementa.<br/>
+
+    <div style="position: relative; top: 10px; left: 100px;">
+        Ovo je tekst unutar DIV elementa s relative položajem.<br/>
+        Relative pomiče sadržaj u odnosu na njegov početni položaj.<br/>
+    </div>
+
+    <div style="position: absolute; top: 500px; right: 200px;">
+        Ovo je tekst unutar DIV elementa s absolute položajem.<br/>
+        Absolute postavlja sadržaj na točno određeno mjesto na stranici.<br/>
+    </div>
+
+    Ovaj tekst je izvan DIV elementa.<br/>
+    Ovaj tekst je izvan DIV elementa.<br/>
+    Ovaj tekst je izvan DIV elementa.<br/>
+</body>
+</html>
