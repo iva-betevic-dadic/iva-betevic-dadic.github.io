@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dodatna poravnanja slike</title>
+</head>
+<body>
+    <p align="left">
+    <h1>
+    Ovdje se koristi align="texttop" <img src="flower.jpg" align="texttop" alt="Cvijet" width="90" height="120">.<br>
+    Ovdje se koristi align="absmiddle" <img src="flower.jpg" align="absmiddle" alt="Cvijet" width="90" height="120">.<br>
+    Ovdje se koristi align="baseline" <img src="flower.jpg" align="baseline" alt="Cvijet" width="90" height="120">.<br>
+    Ovdje se koristi align="absbottom" <img src="flower.jpg" align="absbottom" alt="Cvijet" width="90" height="120">.<br>
+    </h1>
+    </p>
+</body>
+</html>
