@@ -13,14 +13,14 @@ if (window.document.forma.pitanje2.checked == false)
 {tocnih = tocnih + 1;}
 else
 {window.document.forma.pitanje2.checked = false;}
-if (window.document.forma.pitanje3.checked == false)
+if (window.document.forma.pitanje3.checked == true)
 {tocnih = tocnih + 1;}
 else
-{window.document.forma.pitanje3.checked = false;}
-if (window.document.forma.pitanje4.checked == true)
+{window.document.forma.pitanje3.checked = true;}
+if (window.document.forma.pitanje4.checked == false)
 {tocnih = tocnih + 1;}
 else
-{window.document.forma.pitanje4.checked = true;}
+{window.document.forma.pitanje4.checked = false;}
 alert("Imate " + tocnih + " točnih odgovora. Nakon klika prikazani su ispravni odgovori.");
 }
 </script>
@@ -33,9 +33,9 @@ Računalo obrađuje podatke.<br>
 <input type="checkbox" name="pitanje2">
 Miš je izlazni uređaj.<br>
 <input type="checkbox" name="pitanje3">
-Tipkovnica služi za ispis slike na papir.<br>
+Tipkovnica je ulazni uređaj.<br>
 <input type="checkbox" name="pitanje4">
-Internet omogućuje razmjenu informacija.<br>
+Internet služi isključivo za igranje igrica.<br>
 <input type="button" value="Prikaži rezultate" onclick="rezultat();">
 </form>
 </body>
