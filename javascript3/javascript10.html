@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Javascript - vježba 10</title>
+<script language="javascript">
+function rezultat()
+{
+var tocnih = 0;
+if (window.document.forma.pitanje1.checked == true)
+{tocnih = tocnih + 1;}
+else
+{window.document.forma.pitanje1.checked = true;}
+if (window.document.forma.pitanje2.checked == false)
+{tocnih = tocnih + 1;}
+else
+{window.document.forma.pitanje2.checked = false;}
+if (window.document.forma.pitanje3.checked == false)
+{tocnih = tocnih + 1;}
+else
+{window.document.forma.pitanje3.checked = false;}
+if (window.document.forma.pitanje4.checked == true)
+{tocnih = tocnih + 1;}
+else
+{window.document.forma.pitanje4.checked = true;}
+alert("Imate " + tocnih + " točnih odgovora. Nakon klika prikazani su ispravni odgovori.");
+}
+</script>
+</head>
+<body>
+<h2>Riješite kratki kviz:</h2>
+<form name="forma">
+<input type="checkbox" name="pitanje1">
+Računalo obrađuje podatke.<br>
+<input type="checkbox" name="pitanje2">
+Miš je izlazni uređaj.<br>
+<input type="checkbox" name="pitanje3">
+Tipkovnica služi za ispis slike na papir.<br>
+<input type="checkbox" name="pitanje4">
+Internet omogućuje razmjenu informacija.<br>
+<input type="button" value="Prikaži rezultate" onclick="rezultat();">
+</form>
+</body>
+</html>

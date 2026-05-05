@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Javascript - vježba 9</title>
+<script language="javascript">
+function zbrajanje()
+{
+var prviBroj = parseFloat(window.document.forma.polje1.value);
+var drugiBroj = parseFloat(window.document.forma.polje2.value);
+var rezultat = prviBroj + drugiBroj;
+window.document.forma.rezultat.value = rezultat;
+}
+function mnozenje()
+{
+var prviBroj = parseFloat(window.document.forma.polje1.value);
+var drugiBroj = parseFloat(window.document.forma.polje2.value);
+var rezultat = prviBroj * drugiBroj;
+window.document.forma.rezultat.value = rezultat;
+}
+function dijeljenje()
+{
+var prviBroj = parseFloat(window.document.forma.polje1.value);
+var drugiBroj = parseFloat(window.document.forma.polje2.value);
+var rezultat = prviBroj / drugiBroj;
+window.document.forma.rezultat.value = rezultat;
+}
+</script>
+</head>
+<body>
+<form name="forma">
+Prvi broj: <input type="text" name="polje1"><br>
+Drugi broj: <input type="text" name="polje2"><br>
+Izračun: <input type="text" name="rezultat"><br>
+<a href="#" onclick="zbrajanje();">Izračunaj zbroj</a><br>
+<a href="#" onclick="mnozenje();">Izračunaj umnožak</a><br>
+<a href="#" onclick="dijeljenje();">Izračunaj količnik</a>
+</form>
+</body>
+</html>
