@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Petlja 2</title>
+    <script>
+        function fact()
+        {
+            var raspolozenje = window.document.form.raspolozenje.selectedIndex;
+            var izraspolozenje = window.document.form.raspolozenje.options[raspolozenje].text;
+
+            var mjesto = window.document.form.mjesto.selectedIndex;
+            var izmjesto = window.document.form.mjesto.options[mjesto].text;
+
+            alert("Danas se osjećate " + izraspolozenje + " i najradije biste bili na mjestu: " + izmjesto + ".");
+        }
+    </script>
+</head>
+<body>
+    <form name="form">
+        Kako se danas osjećate?<br>
+        <select name="raspolozenje" size="1">
+            <option>mirno</option>
+            <option>pospano</option>
+            <option>znatiželjno</option>
+        </select>
+
+        <p>
+            Koje mjesto biste izabrali?:<br>
+            <select name="mjesto" size="3">
+                <option>šuma</option>
+                <option>plaža</option>
+                <option>knjižnica</option>
+                <option>planina</option>
+                <option>muzej</option>
+                <option>otok</option>
+                <option>vrt</option>
+            </select>
+        </p>
+
+        <input type="button" value="Prikaži odabir" onclick="fact();">
+    </form>
+</body>
+</html>
