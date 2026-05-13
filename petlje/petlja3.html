@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Petlja 3</title>
+    <script>
+        function mark()
+        {
+            for (var i = 0; i < window.document.form.elements.length; i++)
+            {
+                if (window.document.form.elements[i].type == "checkbox")
+                {
+                    window.document.form.elements[i].checked = true;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Koje voće volite?</h2>
+
+    <form name="form">
+        <input type="checkbox">Jabuka<br>
+        <input type="checkbox">Kruška<br>
+        <input type="checkbox">Banana<br>
+        <input type="checkbox">Naranča<br>
+        <input type="checkbox">Jagoda<br>
+        <input type="checkbox">Trešnja<br>
+        <input type="checkbox">Grožđe<br>
+        <input type="checkbox">Lubenica<br>
+        <input type="checkbox">Breskva<br>
+        <input type="checkbox">Šljiva<br>
+
+        <input type="button" value="Označi sve" onclick="mark();">
+        <br>
+        <p></p>
+    </form>
+</body>
+</html>
