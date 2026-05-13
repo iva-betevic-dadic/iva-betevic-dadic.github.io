@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Petlja 1</title>
+    <script>
+        function obavijest()
+        {
+            if (window.document.form.odgovor[1].checked == true ||
+                window.document.form.odgovor[3].checked == true)
+            {
+                alert("Da, ovo je sisavac.");
+            }
+            else
+            {
+                alert("Ne, ovo je ptica");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="form" onclick="obavijest();">
+        Odaberite sisavce:<br>
+
+        <input type="radio" name="odgovor">
+        Sokol je sisavac.<br>
+
+        <input type="radio" name="odgovor">
+        Hrčak je sisavac.<br>
+
+        <input type="radio" name="odgovor">
+        Vrabac je sisavac.<br>
+
+        <input type="radio" name="odgovor">
+        Medvjed je sisavac.<br>
+    </form>
+</body>
+</html>
