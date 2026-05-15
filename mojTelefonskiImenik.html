@@ -118,9 +118,8 @@ window.document.drugaforma.tekstpodsjetnika.value = tekst;
 }
 
 </script>
-
 </head>
-
+  
 <body>
 
 <h1>Moj telefonski imenik</h1>
@@ -128,9 +127,7 @@ window.document.drugaforma.tekstpodsjetnika.value = tekst;
 <form name="prvaforma">
 
 <h2>Telefonski imenik</h2>
-
 Ime:
-
 <select onchange="prikazitelefon(telefon, this.options[this.selectedIndex].value); prikazimobitel(mobitel, this.options[this.selectedIndex].value); promjenipozadinu(boje, this.options[this.selectedIndex].value);">
 
 <option value="ana">Ana
@@ -143,27 +140,18 @@ Ime:
 <option value="lucija">Lucija
 
 </select>
-
 <p>
-
 Telefon:
-
 <input type="text" name="trazenitelefon" value="">
-
 <p>
-
 Mobitel:
-
 <input type="text" name="trazenimobitel" value="">
-
 </form>
 
 <form name="drugaforma">
 
 <h2>Podsjetnik</h2>
-
 Dan u tjednu:
-
 <select onchange="prikazipodsjetnik(podsjetnik, this.options[this.selectedIndex].value);">
 
 <option value="ponedjeljak">Ponedjeljak
@@ -175,11 +163,8 @@ Dan u tjednu:
 <option value="nedjelja">Nedjelja
 
 </select>
-
 <p>
-
 <textarea name="tekstpodsjetnika"></textarea>
-
 </form>
 
 </body>
