@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<title>Vježba 1 - polje</title>
+</head>
+
+<body>
+
+<script language="javascript">
+
+alert("Ispuni tražena polja.");
+
+var odgovor = new Array();
+
+odgovor[0] = prompt("Unesi životinju u ženskom rodu:");
+odgovor[1] = prompt("Unesi opisni pridjev u ženskom rodu (kakva?):");
+odgovor[2] = prompt("Unesi mjesto:");
+odgovor[3] = prompt("Unesi glagol u ženskom rodu i prošlom vremenu:");
+
+var prica = "";
+
+prica = prica + "Mala " + odgovor[0];
+prica = prica + " bila je potpuno " + odgovor[1] + ".";
+prica = prica + " Jednog jutra došla je u " + odgovor[2];
+prica = prica + " i tamo je cijeli dan " + odgovor[3] + ".";
+
+window.document.writeln(prica);
+
+</script>
+
+</body>
+</html>
+
