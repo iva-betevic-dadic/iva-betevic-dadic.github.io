@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<title>Vježba 2 - asocijativno polje</title>
+
+<script language="javascript">
+
+var brojmob1 = new Array();
+
+brojmob1["ana"] = "091-234-5678";
+brojmob1["ivana"] = "092-345-6789";
+brojmob1["petra"] = "095-456-7891";
+brojmob1["marija"] = "097-567-8912";
+brojmob1["lea"] = "098-678-9123";
+brojmob1["nikolina"] = "099-789-1234";
+
+var brojmob2 = new Array();
+
+brojmob2["ema"] = "091-111-2233";
+brojmob2["lucija"] = "092-222-3344";
+brojmob2["sara"] = "095-333-4455";
+brojmob2["dorotea"] = "097-444-5566";
+brojmob2["mia"] = "098-555-6677";
+brojmob2["tea"] = "099-666-7788";
+
+var brojmob3 = new Array();
+
+brojmob3["matea"] = "091-777-8899";
+brojmob3["lara"] = "092-888-9900";
+brojmob3["nina"] = "095-999-1010";
+brojmob3["paula"] = "097-121-3141";
+brojmob3["helena"] = "098-232-4252";
+brojmob3["klara"] = "099-343-5363";
+
+var brojmob4 = new Array();
+
+brojmob3["slavko"] = "091-777-8899";
+brojmob3["marko"] = "092-888-9900";
+brojmob3["nina"] = "095-999-1010";
+brojmob3["paula"] = "097-121-3141";
+brojmob3["helena"] = "098-232-4252";
+brojmob3["klara"] = "099-343-5363";
+
+function prikazibroj(imenik, ulaz)
+{
+var broj = imenik[ulaz];
+
+window.document.mojaforma.trazenibroj.value = broj;
+}
+
+</script>
+
+</head>
+
+<body>
+
+<form name="mojaforma">
+
+Ime:
+
+<select onchange="prikazibroj(brojmob2, this.options[this.selectedIndex].value);">
+
+<option value="ema">Ema
+<option value="lucija">Lucija
+<option value="sara">Sara
+<option value="dorotea">Dorotea
+<option value="mia">Mia
+<option value="tea">Tea
+
+</select>
+
+<p>
+
+Broj:
+
+<input type="text" name="trazenibroj" value="">
+
+</form>
+
+</body>
+</html>

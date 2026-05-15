@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<title>Vježba 3 - promjena pozadine</title>
+
+<script language="javascript">
+
+var boje = new Array();
+
+boje["ana"] = "pink";
+boje["ivana"] = "lightblue";
+boje["petra"] = "lightgreen";
+boje["marija"] = "yellow";
+boje["lea"] = "orange";
+boje["nikolina"] = "violet";
+
+function promjenibozu(pozadina, ulaz)
+{
+var bojapozadine = pozadina[ulaz];
+
+document.body.style.backgroundColor = bojapozadine;
+}
+
+</script>
+
+</head>
+
+<body>
+
+<form name="mojaforma">
+
+Odaberi ime:
+
+<select onChange="promjenibozu(boje, this.options[this.selectedIndex].value);">
+
+<option value="ana">Ana
+<option value="ivana">Ivana
+<option value="petra">Petra
+<option value="marija">Marija
+<option value="lea">Lea
+<option value="nikolina">Nikolina
+
+</select>
+
+</form>
+
+</body>
+</html>
