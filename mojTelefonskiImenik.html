@@ -86,21 +86,21 @@ podsjetnik["utorak"] = "Naručiti se zubaru";
 podsjetnik["srijeda"] = "Nazvati baku";
 podsjetnik["cetvrtak"] = "Odvesti Lu na cijepljenje";
 podsjetnik["petak"] = "Obaviti špeceraj";
-podsjetnik["subota"] = "Doruačk kod Josipe";
+podsjetnik["subota"] = "Doručak kod Josipe";
 podsjetnik["nedjelja"] = "Roštilj kod Matije";
 
 function prikazitelefon(imenik, ulaz)
 {
 var broj = imenik[ulaz];
 
-window.document.prvaforma.telefon.value = broj;
+window.document.prvaforma.trazenitelefon.value = broj;
 }
 
 function prikazimobitel(imenik, ulaz)
 {
 var broj = imenik[ulaz];
 
-window.document.prvaforma.mobitel.value = broj;
+window.document.prvaforma.trazenimobitel.value = broj;
 }
 
 function promjenipozadinu(pozadina, ulaz)
@@ -148,13 +148,13 @@ Ime:
 
 Telefon:
 
-<input type="text" name="telefon" value="">
+<input type="text" name="trazenitelefon" value="">
 
 <p>
 
 Mobitel:
 
-<input type="text" name="mobitel" value="">
+<input type="text" name="trazenimobitel" value="">
 
 </form>
 
@@ -184,4 +184,3 @@ Dan u tjednu:
 
 </body>
 </html>
-
