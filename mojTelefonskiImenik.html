@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<title>Moj telefonski imenik</title>
+
+<style type="text/css">
+
+body {
+font-family: arial;
+background-color: #eeeeee;
+}
+
+h1 {
+text-align: center;
+color: #333333;
+}
+
+h2 {
+color: #333333;
+}
+
+form {
+width: 500px;
+background-color: white;
+padding: 20px;
+margin: 25px auto;
+border: 1px solid #999999;
+border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+box-shadow: 5px 5px 10px #000;
+-moz-box-shadow: 5px 5px 10px #000;
+-webkit-box-shadow: 5px 5px 10px #000;
+}
+
+input {
+width: 200px;
+}
+
+textarea {
+width: 420px;
+height: 100px;
+}
+
+</style>
+
+<script language="javascript">
+
+var telefon = new Array();
+
+telefon["ana"] = "01-345-678";
+telefon["ivana"] = "01-234-567";
+telefon["petra"] = "01-789-123";
+telefon["marija"] = "01-456-789";
+telefon["lea"] = "01-987-654";
+telefon["nikolina"] = "01-654-321";
+telefon["ema"] = "01-321-987";
+telefon["lucija"] = "01-852-963";
+
+var mobitel = new Array();
+
+mobitel["ana"] = "091-234-5678";
+mobitel["ivana"] = "092-345-6789";
+mobitel["petra"] = "095-456-7891";
+mobitel["marija"] = "097-567-8912";
+mobitel["lea"] = "098-678-9123";
+mobitel["nikolina"] = "099-789-1234";
+mobitel["ema"] = "091-111-2233";
+mobitel["lucija"] = "092-222-3344";
+
+var boje = new Array();
+
+boje["ana"] = "pink";
+boje["ivana"] = "lightblue";
+boje["petra"] = "lightgreen";
+boje["marija"] = "yellow";
+boje["lea"] = "orange";
+boje["nikolina"] = "violet";
+boje["ema"] = "lightgray";
+boje["lucija"] = "wheat";
+
+var podsjetnik = new Array();
+
+podsjetnik["ponedjeljak"] = "Ponedjeljak: provjeriti obaveze za fakultet i pripremiti materijale za novi tjedan.";
+podsjetnik["utorak"] = "Utorak: ponoviti gradivo i urediti bilješke.";
+podsjetnik["srijeda"] = "Srijeda: poslati zadatke i provjeriti jesu li sve datoteke spremljene.";
+podsjetnik["cetvrtak"] = "Četvrtak: završiti vježbe i provjeriti web stranicu.";
+podsjetnik["petak"] = "Petak: predati zadatke i napraviti plan za vikend.";
+podsjetnik["subota"] = "Subota: odmoriti se i po potrebi dovršiti zaostatke.";
+podsjetnik["nedjelja"] = "Nedjelja: pripremiti se za novi tjedan.";
+
+function prikazitelefon(imenik, ulaz)
+{
+var broj = imenik[ulaz];
+
+window.document.prvaforma.telefon.value = broj;
+}
+
+function prikazimobitel(imenik, ulaz)
+{
+var broj = imenik[ulaz];
+
+window.document.prvaforma.mobitel.value = broj;
+}
+
+function promjenipozadinu(pozadina, ulaz)
+{
+var bojapozadine = pozadina[ulaz];
+
+window.document.prvaforma.style.backgroundColor = bojapozadine;
+}
+
+function prikazipodsjetnik(dani, ulaz)
+{
+var tekst = dani[ulaz];
+
+window.document.drugaforma.tekstpodsjetnika.value = tekst;
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Moj telefonski imenik</h1>
+
+<form name="prvaforma">
+
+<h2>Telefonski imenik</h2>
+
+Ime:
+
+<select onchange="prikazitelefon(telefon, this.options[this.selectedIndex].value); prikazimobitel(mobitel, this.options[this.selectedIndex].value); promjenipozadinu(boje, this.options[this.selectedIndex].value);">
+
+<option value="ana">Ana
+<option value="ivana">Ivana
+<option value="petra">Petra
+<option value="marija">Marija
+<option value="lea">Lea
+<option value="nikolina">Nikolina
+<option value="ema">Ema
+<option value="lucija">Lucija
+
+</select>
+
+<p>
+
+Telefon:
+
+<input type="text" name="telefon" value="">
+
+<p>
+
+Mobitel:
+
+<input type="text" name="mobitel" value="">
+
+</form>
+
+<form name="drugaforma">
+
+<h2>Podsjetnik</h2>
+
+Dan u tjednu:
+
+<select onchange="prikazipodsjetnik(podsjetnik, this.options[this.selectedIndex].value);">
+
+<option value="ponedjeljak">Ponedjeljak
+<option value="utorak">Utorak
+<option value="srijeda">Srijeda
+<option value="cetvrtak">Četvrtak
+<option value="petak">Petak
+<option value="subota">Subota
+<option value="nedjelja">Nedjelja
+
+</select>
+
+<p>
+
+<textarea name="tekstpodsjetnika"></textarea>
+
+</form>
+
+</body>
+</html>
+
