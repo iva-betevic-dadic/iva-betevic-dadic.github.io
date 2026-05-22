@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<title>Vjezba - vremensko upravljani prikaz</title>
+
+<script language="javascript">
+
+var slike = new Array();
+
+slike[0] = new Image();
+slike[0].src = "1.jpg";
+
+slike[1] = new Image();
+slike[1].src = "2.jpg";
+
+slike[2] = new Image();
+slike[2].src = "3.jpg";
+
+slike[3] = new Image();
+slike[3].src = "4.jpg";
+
+slike[4] = new Image();
+slike[4].src = "5.jpg";
+
+slike[5] = new Image();
+slike[5].src = "6.jpg";
+
+var vrijeme;
+var indeks = 0;
+
+function promjenaslika()
+{
+window.document.mojaslika.src = slike[indeks].src;
+
+indeks++;
+
+if (indeks >= slike.length)
+{
+indeks = 0;
+}
+
+vrijeme = setTimeout("promjenaslika();", 1000);
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Vjezba - vremensko upravljani prikaz</h1>
+
+<img name="mojaslika" src="1.jpg">
+
+<form>
+
+<p>
+
+<input type="button" value="Zapocni slideshow" onclick="clearTimeout(vrijeme); promjenaslika();">
+
+<input type="button" value="Zaustavi slideshow" onclick="clearTimeout(vrijeme);">
+
+</form>
+
+</body>
+</html>
