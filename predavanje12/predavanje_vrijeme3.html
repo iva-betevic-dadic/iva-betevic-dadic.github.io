@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<title>Primjer 3 - galerija</title>
+
+<script language="javascript">
+
+var slike = new Array();
+
+slike[0] = new Image();
+slike[0].src = "prva.jpg";
+
+slike[1] = new Image();
+slike[1].src = "druga.jpg";
+
+slike[2] = new Image();
+slike[2].src = "treca.jpg";
+
+var vrijeme;
+var indeks = 0;
+
+function zamijenisliku()
+{
+window.document.mojaslika.src = slike[indeks].src;
+
+indeks++;
+
+if (indeks >= slike.length)
+{
+indeks = 0;
+}
+
+vrijeme = setTimeout("zamijenisliku();", 1000);
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Primjer 3 - galerija</h1>
+
+<p>Slike se izmijenjuju svake sekunde.</p>
+
+<img name="mojaslika" src="prva.jpg" height="300">
+
+<form>
+
+<input type="button" value="Pokreni" onclick="clearTimeout(vrijeme); zamijenisliku();">
+<input type="button" value="Zaustavi" onclick="clearTimeout(vrijeme);">
+
+</form>
+
+</body>
+</html>
