@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<title>Primjer 2 - stoperica</title>
+
+<script language="javascript">
+
+var vrijeme;
+
+function promjena()
+{
+var broj = window.document.mojaforma.tekst.value;
+broj = parseInt(broj) + 1;
+window.document.mojaforma.tekst.value = broj;
+vrijeme = setTimeout("promjena();", 1000);
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Primjer 2 - stoperica</h1>
+
+<p>U ovom primjeru broj se povecava svake sekunde.</p>
+
+<form name="mojaforma">
+
+<input type="text" name="tekst" value="0">
+
+<br>
+
+<input type="button" value="pokreni brojac" onclick="clearTimeout(vrijeme); promjena();">
+
+<input type="button" value="zaustavi brojac" onclick="clearTimeout(vrijeme);">
+
+</form>
+
+</body>
+</html>
