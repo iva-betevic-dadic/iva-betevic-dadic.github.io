@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<title>Primjer 4 - dvije galerije</title>
+
+<script language="javascript">
+
+var slike = new Array();
+
+slike[0] = new Image();
+slike[0].src = "prva.jpg";
+
+slike[1] = new Image();
+slike[1].src = "druga.jpg";
+
+slike[2] = new Image();
+slike[2].src = "treca.jpg";
+
+var vrijeme;
+var vrijeme2;
+var indeks = 0;
+var indeks2 = 0;
+
+function zamijenisliku()
+{
+window.document.mojaslika.src = slike[indeks].src;
+
+indeks++;
+
+if (indeks >= slike.length)
+{
+indeks = 0;
+}
+
+vrijeme = setTimeout("zamijenisliku();", 1000);
+}
+
+function zamijenisliku2()
+{
+window.document.mojaslika2.src = slike[indeks2].src;
+
+indeks2++;
+
+if (indeks2 >= slike.length)
+{
+indeks2 = 0;
+}
+
+vrijeme2 = setTimeout("zamijenisliku2();", 500);
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Primjer 4 - dvije slideshow galerije</h1>
+
+<p>Prva galerija mijenja slike svake sekunde, a druga svakih pola sekunde.</p>
+
+<img name="mojaslika" src="prva.jpg" height="200">
+
+<form>
+
+<input type="button" value="Pokreni prvi slideshow" onclick="clearTimeout(vrijeme); zamijenisliku();">
+
+<input type="button" value="Zaustavi prvi slideshow" onclick="clearTimeout(vrijeme);">
+
+</form>
+
+<p> <br><br>
+
+<img name="mojaslika2" src="prva.jpg" height="200">
+
+<form>
+
+<input type="button" value="Pokreni drugi slideshow" onclick="clearTimeout(vrijeme2); zamjenisliku2();">
+
+<input type="button" value="Zaustavi drugi slideshow" onclick="clearTimeout(vrijeme2);">
+
+</form>
+
+</body>
+</html>
