@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <title>Pomicanje div elementa Javascriptom</title>
+</head>
+<body>
+
+    <div><img src="prva.jpg" alt="Prva slika" width="200"></div>
+
+    <div id="slikaDva" style="position: relative; left: 0px;">
+        <img src="druga.jpg" alt="Druga slika" width="200">
+    </div>
+
+    <div><img src="treca.jpg" alt="Treća slika" width="200"></div>
+
+    <input type="button" value="Pomakni sliku udesno" onclick="window.document.getElementById('slikaDva').style.left = (parseInt(window.document.getElementById('slikaDva').style.left) || 0) + 30 + 'px';">
+
+</body>
+</html>
