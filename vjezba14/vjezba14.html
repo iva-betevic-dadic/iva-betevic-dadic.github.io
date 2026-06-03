@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Vježba 14 - div i slike</title>
+    <title>vježba div elementi</title>
 
     <style>
         .slika {
@@ -9,10 +9,6 @@
             height: 200px;
             background-size: cover;
             background-position: center;
-        }
-
-        .slika:hover {
-            z-index: 20;
         }
 
         #prvi {
@@ -60,17 +56,22 @@
             z-index: 0;
         }
 
+        #prvi:hover,
+        #drugi:hover,
+        #treci:hover,
+        #cetvrti:hover,
+        #peti:hover,
         #sesti:hover {
-            z-index: 20;
+            z-index: 100;
         }
     </style>
 </head>
 
 <body>
 
-    <input type="button" value="u lijevo" onclick="window.document.getElementById('sesti').style.left = (parseInt(window.document.getElementById('sesti').style.left) || 0) - 20 + 'px';">
+    <input type="button" value="Pomak lijevo" onclick="window.document.getElementById('sesti').style.left = (parseInt(window.document.getElementById('sesti').style.left) || 0) - 20 + 'px';">
 
-    <input type="button" value="u desno" onclick="window.document.getElementById('sesti').style.left = (parseInt(window.document.getElementById('sesti').style.left) || 0) + 20 + 'px';">
+    <input type="button" value="Pomak desno" onclick="window.document.getElementById('sesti').style.left = (parseInt(window.document.getElementById('sesti').style.left) || 0) + 20 + 'px';">
 
     <div id="prvi" class="slika"></div>
     <div id="drugi" class="slika"></div>
