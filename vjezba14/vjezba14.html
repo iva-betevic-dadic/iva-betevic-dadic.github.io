@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <title>Vježba 14 - div i slike</title>
+
+    <style>
+        .slika {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .slika:hover {
+            z-index: 20;
+        }
+
+        #prvi {
+            top: 100px;
+            left: 100px;
+            background-image: url("1.jpg");
+            z-index: 1;
+        }
+
+        #drugi {
+            top: 150px;
+            left: 150px;
+            background-image: url("2.jpg");
+            z-index: 2;
+        }
+
+        #treci {
+            top: 200px;
+            left: 200px;
+            background-image: url("3.jpg");
+            z-index: 3;
+        }
+
+        #cetvrti {
+            top: 300px;
+            left: 350px;
+            background-image: url("4.jpg");
+            z-index: 4;
+        }
+
+        #peti {
+            top: 350px;
+            left: 300px;
+            background-image: url("5.jpeg");
+            z-index: 5;
+        }
+
+        #sesti {
+            position: absolute;
+            top: 250px;
+            left: 0px;
+            width: 350px;
+            height: 200px;
+            background-color: gray;
+            z-index: 0;
+        }
+
+        #sesti:hover {
+            z-index: 20;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="button" value="u lijevo" onclick="window.document.getElementById('sesti').style.left = (parseInt(window.document.getElementById('sesti').style.left) || 0) - 20 + 'px';">
+
+    <input type="button" value="u desno" onclick="window.document.getElementById('sesti').style.left = (parseInt(window.document.getElementById('sesti').style.left) || 0) + 20 + 'px';">
+
+    <div id="prvi" class="slika"></div>
+    <div id="drugi" class="slika"></div>
+    <div id="treci" class="slika"></div>
+    <div id="cetvrti" class="slika"></div>
+    <div id="peti" class="slika"></div>
+    <div id="sesti"></div>
+
+</body>
+</html>
