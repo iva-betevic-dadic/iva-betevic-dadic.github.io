@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Manipulacija div elementima</title>
+</head>
+<body>
+
+    <div id="slikaJedan" style="position: absolute; top: 50px; left: 10px; z-index: 3;">
+        <img src="prva.jpg" alt="Prva slika" width="200">
+    </div>
+
+    <div id="slikaDva" style="position: absolute; top: 50px; left: 10px; z-index: 2;">
+        <img src="druga.jpg" alt="Druga slika" width="200">
+    </div>
+
+    <div id="slikaTri" style="position: absolute; top: 50px; left: 10px; z-index: 1;">
+        <img src="treca.jpg" alt="Treća slika" width="200">
+    </div>
+
+    <input type="button" value="Prikaži prvu sliku na vrhu" style="margin-top: 300px;"
+           onclick="window.document.getElementById('slikaJedan').style.zIndex='10'; window.document.getElementById('slikaDva').style.zIndex='1'; window.document.getElementById('slikaTri').style.zIndex='1';">
+
+    <input type="button" value="Prikaži treću sliku na vrhu" style="margin-top: 300px;"
+           onclick="window.document.getElementById('slikaTri').style.zIndex='10'; window.document.getElementById('slikaJedan').style.zIndex='1'; window.document.getElementById('slikaDva').style.zIndex='1';">
+
+</body>
+</html>
